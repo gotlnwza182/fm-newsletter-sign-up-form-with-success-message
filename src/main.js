@@ -18,7 +18,7 @@ function handleSubmit(e) {
     return console.log("Email is required!");
   }
 
-  window.location.href = "/src/pages/success.html";
+  window.location.href = "success.html";
   console.log(data);
 }
 
