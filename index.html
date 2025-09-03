@@ -16,6 +16,7 @@
   </head>
   <body class="min-h-screen content-center bg-blue-700 border">
     <article
+      id="mainCard"
       class="max-w-full mx-auto bg-white grid grid-cols-1 md:max-w-152 md:p-10 md:rounded-[2rem] xl:max-w-226 xl:grid-cols-2 xl:gap-16 xl:p-8"
     >
       <div class="xl:col-start-2 xl:row-span-2">
@@ -67,6 +68,37 @@
             class="w-full h-14 bg-blue-800 text-white text-preset-2 font-bold rounded-lg hover:cursor-pointer hover:brightness-125 active:bg-gradient-4"
           >
             Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </article>
+
+    <article
+      id="successCard"
+      class="max-w-full h-screen content-center mx-auto bg-white md:h-auto md:max-w-126 md:p-16 md:rounded-[2rem] hidden"
+    >
+      <div class="mx-4">
+        <img
+          src="/assets/images/icon-success.svg"
+          alt="icon-success"
+          class=""
+        />
+      </div>
+      <div class="my-10 mx-4 md:mx-0 md:mb-0">
+        <h1 class="text-preset-1">Thanks for subscribing!</h1>
+        <p class="text-preset-2 my-6">
+          A confirmation email has been sent to
+          <span id="userEmail" class="font-bold">ash@loremcompany.com.</span>
+          Please open it and click the button inside to confirm your
+          subscription
+        </p>
+
+        <form id="successForm">
+          <button
+            type="submit"
+            class="w-full h-14 bg-blue-800 text-white text-preset-2 font-bold rounded-lg hover:cursor-pointer hover:brightness-125 active:bg-gradient-4"
+          >
+            Dismiss message
           </button>
         </form>
       </div>
